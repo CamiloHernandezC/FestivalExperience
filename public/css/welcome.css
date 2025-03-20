@@ -1,0 +1,272 @@
+@media only screen and (max-width: 450px) {/*Para que los títulos se ajusten*/
+    h1{
+        font-size: 15vw;
+    }
+}
+@media only screen and (min-width: 450px) {
+    h1 {
+        font-size: 4.125rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .section{
+        display: block;
+    }
+    .sub-section-info{
+        width: 90vw;
+        text-align: center;
+    }
+    .section > *{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pay-image{
+        height: 50vw;
+        width: 50vw
+    }
+    .pay-image2{
+        height: 20vw;
+        width: 20vw;
+        bottom: 20vw;
+    }
+    .overflow-text{/*Si el texto es demasiado grande para dispositivos mobiles*/
+        font-size: 3rem;
+    }
+
+    .landscape-video{
+        display: none;
+    }
+    .portrait-video{
+        display: block;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .section{
+        display: flex;
+        justify-content: space-around;
+    }
+    .sub-section-info{
+        width: 45vw;
+    }
+    .section > *{
+        margin: auto 0;
+    }
+    .pay-image{
+        height: 25vw;
+        width: 25vw
+    }
+    .pay-image2{
+        height: 10vw;
+        width: 10vw;
+        bottom: 10vw;
+    }
+
+    .landscape-video{
+        display: block;
+    }
+    .portrait-video{
+        display: none;
+    }
+}
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    /*font-family: 'Raleway', sans-serif!important*/;
+    font-weight: 100;
+    font-size: 84px;
+}
+
+.links > a {
+    color: white;
+    padding: 0 25px;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn{
+    border-radius: 20px!important;
+}
+.section{
+    min-height: 90vh;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;/*necesario para que las imágenes se ubiquen donde debe ser*/
+}
+body{
+    overflow-x: hidden;
+    /*font-family: 'Barlow Regular', sans-serif;*/
+    font-family: 'Cinzel'!important;
+    font-weight: 200!important;
+}
+footer{
+    background: rgb(67,5,68);
+}
+
+.landingVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /*   Ajusta el video para cubrir el contenedor sin distorsión */
+    position: relative;
+}
+
+#schedule-courtesy  {
+    position: absolute;
+    top: 70%; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%; /* Ajusta la posición horizontal según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el botón */
+    padding: 15px 20px; /* Ajusta el tamaño y el espaciado del botón */
+    background: #28a745; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /*to show after some time*/
+}
+
+.brand-name{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.brand-name span{
+    color:  #5383d3;
+}
+h1{
+    font-weight: 600;
+    line-height: 5rem;
+}
+.how-works-image{
+    z-index: 1;/*Sin esto no funciona el shadow*/
+    position: relative;/*Sin esto no funciona el shadow*/
+}
+#section1{
+    /*background-color: cornflowerblue;*/
+    color: white;
+}
+#section2{
+    color: black;
+}
+#section3{
+    color: white;
+}
+#section4{
+    color: black;
+}
+#section5{
+    color: white;
+    height: 90vh;/*para que centre, en este caso la altura es fija*/
+}
+#section6{
+    min-height: 110vh;
+}
+#section5::after {
+    content: "";
+    background-image: url("../images/experiencias.jpg");
+    background-size: 100% 100%;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.shadow-bottom{
+    position: relative;/*Sin esto no funciona el shadow*/
+}
+.shadow-bottom:after{/*Sin esto no funciona el shadow*/
+    content: "";
+    position: absolute;
+    z-index: 0;
+    -webkit-box-shadow: 0 0 60px rgba(0,0,0,.8);
+    box-shadow: 0 0 60px rgba(0,0,0,1);
+    bottom: 0px;
+    width: 80%;
+    height: 50%;
+    border-radius: 20%;
+    left: 10%;
+    right: 10%;
+}
+.footer-icons{
+    font-size: xx-large;
+}
+.redondeado{
+    border-radius: 20px;
+}
+.media-slider{
+    height: 40vh;
+}
+.media-descripcion {
+    height: 28vh;
+}
+.color-white{
+    color: white!important;
+}
+.color-salmon{
+    color: rgb(236, 155, 126);
+}
+.benefits_icon{
+    width: 70px;
+    height: 70px;
+}
+@font-face {
+    font-family: "Barlow Thin";
+    src:  url('../fonts/barlow/Barlow-Thin.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Barlow Regular";
+    src:  url('../fonts/barlow/Barlow-Regular.ttf') format("truetype");
+}
+.svg_white{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(270deg) brightness(103%) contrast(102%);
+}
+.boots-image{
+    height: 400px;
+}
+.bg-grey{
+    background-color: rgba(52,58,64,0.6);
+    color: white;
+}
+.bg-semi-transparent{
+    background-color: rgb(67,5,68, 0.9);
+    color: white;
+}
+.bg-brand-primary-gradient{
+    background: linear-gradient(90deg, rgba(67,0,36,1) 0%, rgba(67,5,68,1) 72%, rgba(87,6,88,1) 100%);
+}
+.fade-in-section {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,16 @@
+/*carousel needs a JS to function*/
+
+.carousel-item{
+    margin-right: 0;
+}
+
+.carousel-card{
+    height: 70vh;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-body-bottom{
+    margin-top: auto;
+}
