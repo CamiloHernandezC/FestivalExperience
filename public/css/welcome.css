@@ -1,6 +1,6 @@
 @media only screen and (max-width: 450px) {/*Para que los títulos se ajusten*/
     h1{
-        font-size: 15vw;
+        font-size: 14vw;
     }
 }
 @media only screen and (min-width: 450px) {
@@ -124,7 +124,7 @@ body{
     font-weight: 200!important;
 }
 footer{
-    background: rgb(67,5,68);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,20,20,1) 72%, rgba(30,30,30,1) 100%);
 }
 
 .landingVideo{
@@ -140,7 +140,6 @@ footer{
     left: 50%; /* Ajusta la posición horizontal según tus necesidades */
     transform: translate(-50%, -50%); /* Centra el botón */
     padding: 15px 20px; /* Ajusta el tamaño y el espaciado del botón */
-    background: #28a745; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     border: none;
     border-radius: 5px;

@@ -4,6 +4,6 @@
             <h1 class="mb-5" style=" font-family: 'Cinzel'!important; font-weight: 200!important;">{{$title}}</h1>
             <h3 class="mb-5">{{$description}}</h3>
         </div>
-        <div class="col-12 col-md-4 m-auto ml-md-auto fade-in-section" style="height: 60vh; background-image: url('{{$img}}'); background-size: cover; background-position: center"></div>
+        <div class="col-12 col-md-4 m-auto ml-md-auto fade-in-section" style="height: 60vh; background-image: url('{{$img}}'); background-size: contain; background-position: center"></div>
     </div>
 </div>
